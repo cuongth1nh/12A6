@@ -37,7 +37,7 @@ section {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 150vh;
+    width: auto;
     margin-bottom: 40px;
     padding: 20px;
 }
@@ -73,4 +73,79 @@ section {
     color: black;
     margin: 3rem 1.5rem 3rem;
     font-size: 3rem;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    main {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 15px;
+    }
+
+    .home-content h2 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .home-content h4 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .home-content p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .home-img img {
+        width: 30vh;
+        height: 30vh;
+    }
+
+    .social-icon {
+        display: flex;
+        justify-content: center; /* Căn giữa các biểu tượng */
+        align-items: center;
+        flex-wrap: wrap; /* Đảm bảo các biểu tượng không bị tràn ra ngoài nếu không đủ không gian */
+        gap: 2rem;
+    }
+
+    .social-icon a {
+        margin: 1.5rem 0;
+        font-size: 2.5rem;
+    }
+}
+
+/* Media Queries for Small Mobile Devices (e.g. below 480px) */
+@media (max-width: 480px) {
+    .home-content h2 {
+        font-size: 3rem;
+    }
+
+    .home-content h4 {
+        font-size: 1rem;
+    }
+
+    .home-content p {
+        font-size: 1rem;
+    }
+
+    .home-img img {
+        width: 25vh;
+        height: 25vh;
+    }
+
+    .social-icon a {
+        font-size: 2rem;
+    }
 }
