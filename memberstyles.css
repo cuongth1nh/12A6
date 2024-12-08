@@ -1,3 +1,4 @@
+/* Cấu hình cơ bản cho trang */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -5,6 +6,7 @@ body {
     background-color: #f4f4f9;
 }
 
+/* Navbar */
 nav {
     background-color: #333;
     color: white;
@@ -16,6 +18,7 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 16px 20px;
+    font-size: 16px;
 }
 
 nav a:hover {
@@ -24,37 +27,46 @@ nav a:hover {
     border-radius: 6px;
 }
 
+/* Header */
 header {
     background-color: #4caf50;
     color: white;
-    padding: 13px 0;
+    padding: 20px 0;
     text-align: center;
+    margin-bottom: 20px;
 }
 
+/* Nội dung chính */
 main {
-    font: large;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
+/* Tiêu đề của main */
 main h2 {
     text-align: center;
+    font-size: 24px;
+    margin-top: 0;
 }
 
+/* Container cho các thành viên */
 .member-container {
-    display: flex; /* Sắp xếp linh hoạt các phần tử bên trong */
-    flex-wrap: wrap; /* Căn đều nội dung */
-    justify-content: center; /* Căn giữa các phần tử theo chiều ngang (trục x) */
-    margin: 20px 140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 40px;
 }
 
+/* Card của thành viên */
 .member-card {
     background-color: white;
-    border-radius: 8px; /* Tạo viền cong cong vẹo vẹo */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tạo bóng */ /* 0 là trục X, 4px là trục Y, 8px là độ mờ của bóng, rgba tạo độ trong suốt của bóng giá trị 0.1 chỉ độ trong suốt */
-    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
     width: 250px;
     padding: 20px;
     text-align: center;
-    transition: transform 0.3s; /* Tạo hiệu ứng */
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .member-container a {
@@ -63,8 +75,10 @@ main h2 {
 
 .member-card:hover {
     transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Làm bóng mạnh hơn khi hover */
 }
 
+/* Hình ảnh của thành viên */
 .member-card img {
     width: 100px;
     height: 100px;
@@ -73,26 +87,31 @@ main h2 {
     margin-bottom: 15px;
 }
 
+/* Tiêu đề của thành viên */
 .member-card h3 {
     color: #333;
     margin: 10px 0;
+    font-size: 18px;
 }
 
+/* Mô tả của thành viên */
 .member-card p {
     color: #555;
+    font-size: 14px;
 }
 
-/* Thiết lập phần chân */
+/* Footer */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
+    position: relative;
     width: 100%;
+    bottom: 0;
 }
 
 footer p {
     margin: 0;
+    font-size: 14px;
 }

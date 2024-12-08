@@ -85,3 +85,61 @@ footer {
 footer p {
     margin: 0;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Khi màn hình nhỏ hơn 768px, điều chỉnh các phần tử cho phù hợp */
+    header {
+        padding: 10px 0;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    .container {
+        flex-direction: column; /* Đặt các phần tử theo chiều dọc thay vì ngang */
+        align-items: center;
+    }
+
+    .text {
+        margin-right: 0;
+        margin-bottom: 20px; /* Thêm khoảng cách dưới */
+        text-align: center;
+    }
+
+    .anhlop img {
+        width: 100%; /* Đảm bảo ảnh không quá rộng trên màn hình nhỏ */
+        max-width: 100%;
+        height: auto;
+    }
+
+    main p {
+        font-size: 18px; /* Giảm kích thước font chữ cho các màn hình nhỏ */
+        padding: 10px;
+        margin: 10px;
+    }
+
+    footer {
+        padding: 15px 0; /* Tăng khoảng cách cho phần footer trên điện thoại */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Khi màn hình nhỏ hơn 480px, điều chỉnh các phần tử cho phù hợp */
+    nav {
+        font-size: 14px;
+    }
+
+    main p {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}

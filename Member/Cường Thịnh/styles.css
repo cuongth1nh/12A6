@@ -4,6 +4,7 @@
     padding: 0;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box; /* Thêm box-sizing để dễ kiểm soát các thuộc tính width, height */
 }
 
 header {
@@ -13,8 +14,8 @@ header {
 }
 
 body {
-    width: 100%; /* Đặt chiều rộng của trang là 100% chiều rộng của cửa sổ trình duyệt */
-    height: 100vh; /* Đặt chiều cao của trang là 100% chiều cao của cửa sổ trình duyệt (100vh = 100% chiều cao cửa sổ) */
+    width: 100%;
+    height: 100vh;
     background-color: #B3C8CF;
 }
 
@@ -37,7 +38,8 @@ section {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: auto;
+    width: 100%; /* Đảm bảo chiều rộng của container không vượt quá màn hình */
+    max-width: 1200px; /* Đặt chiều rộng tối đa để tránh quá rộng trên màn hình lớn */
     margin-bottom: 40px;
     padding: 20px;
 }
@@ -75,7 +77,7 @@ section {
     font-size: 3rem;
 }
 
-/* Media Queries for Mobile */
+/* Media Queries for Tablet and Mobile Devices */
 @media (max-width: 768px) {
     body {
         padding: 10px;
@@ -114,9 +116,9 @@ section {
 
     .social-icon {
         display: flex;
-        justify-content: center; /* Căn giữa các biểu tượng */
+        justify-content: center;
         align-items: center;
-        flex-wrap: wrap; /* Đảm bảo các biểu tượng không bị tràn ra ngoài nếu không đủ không gian */
+        flex-wrap: wrap;
         gap: 2rem;
     }
 
@@ -126,7 +128,7 @@ section {
     }
 }
 
-/* Media Queries for Small Mobile Devices (e.g. below 480px) */
+/* Media Queries for Small Mobile Devices */
 @media (max-width: 480px) {
     .home-content h2 {
         font-size: 3rem;
